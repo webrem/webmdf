@@ -1,0 +1,60 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #111 url('https://www.transparenttextures.com/patterns/cubes.png');
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background: #1c1c1c;
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    background-color: #e00000;
+    color: white;
+    padding: 20px;
+    border-bottom: 5px solid #1fa67a;
+}
+
+.logo {
+    max-height: 60px;
+    margin-bottom: 10px;
+}
+
+form {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #1fa67a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}

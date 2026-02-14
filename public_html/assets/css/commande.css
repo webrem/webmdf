@@ -1,0 +1,329 @@
+/* ======================================================
+   PAGE RÉPARATIONS – R.E.Mobiles (FIX LISIBILITÉ)
+   ====================================================== */
+
+.page-commande{
+  background: linear-gradient(
+    180deg,
+    #050814,
+    #0a1026
+  );
+  color: #f8fafc;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Titre */
+.page-commande h2{
+  color: #fb7185;
+  font-weight: 800;
+  letter-spacing: .4px;
+  margin-bottom: 1.5rem;
+}
+
+/* Bande rôle */
+.page-commande .role-banner{
+  background: linear-gradient(90deg, #e11d48, #9f1239);
+  border-radius: 14px;
+  padding: 12px;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: 0 12px 30px rgba(0,0,0,.45);
+  margin-bottom: 1.2rem;
+}
+
+/* =====================
+   TABLE PRINCIPALE
+   ===================== */
+
+.page-commande .table{
+  background: rgba(15,20,45,.95);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+/* En-tête */
+.page-commande .table thead th{
+  background: linear-gradient(90deg, #9f1239, #e11d48);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: .85rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  padding: 14px 12px;
+  border-right: 1px solid rgba(255,255,255,.18);
+}
+.page-commande .table thead th:last-child{
+  border-right: none;
+}
+
+/* Lignes */
+.page-commande .table tbody tr{
+  background: rgba(255,255,255,.02);
+  transition: background .2s ease;
+}
+
+/* Hover ligne */
+.page-commande .table-hover tbody tr:hover{
+  background: rgba(225,29,72,.18);
+}
+
+/* Cellules */
+.page-commande .table tbody td{
+  padding: 14px 12px;
+  color: #f8fafc;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+  border-right: 1px solid rgba(255,255,255,.08);
+  vertical-align: middle;
+}
+
+/* Dernière colonne sans bordure */
+.page-commande .table tbody td:last-child{
+  border-right: none;
+}
+
+/* =====================
+   FORMULAIRES DANS TABLE
+   ===================== */
+
+.page-commande .form-control,
+.page-commande .form-select{
+  background: rgba(10,15,35,.95);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 10px;
+  font-size: .9rem;
+}
+
+.page-commande .form-control::placeholder{
+  color: rgba(255,255,255,.6);
+}
+
+.page-commande .form-control:focus,
+.page-commande .form-select:focus{
+  border-color: #e11d48;
+  box-shadow: 0 0 0 .2rem rgba(225,29,72,.35);
+}
+
+/* Bouton ajouter acompte */
+.page-commande .btn-success{
+  background: linear-gradient(90deg, #e11d48, #9f1239);
+  border: none;
+  font-weight: 800;
+}
+.page-commande .btn-success:hover{
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+/* =====================
+   BADGES
+   ===================== */
+
+.page-commande .badge{
+  font-size: .85rem;
+  padding: .45em .7em;
+  border-radius: 8px;
+}
+
+/* =====================
+   LISTE ACOMPTES
+   ===================== */
+
+.page-commande ul{
+  padding-left: 0;
+  margin-bottom: .5rem;
+}
+
+.page-commande li{
+  list-style: none;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+}
+
+/* =====================
+   MODAL
+   ===================== */
+
+.page-commande .modal-content{
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.65);
+}
+
+
+
+
+/* =========================
+   POS INPUT SYSTEM (FIX DEFINITIF)
+   ========================= */
+
+/* Reset Bootstrap / navigateur */
+.pos-wrap input,
+.pos-wrap select,
+.pos-wrap textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  color: #FFFFFF !important;
+  background-color: #0B1220 !important;
+
+  font-size: .95rem;
+  font-weight: 500;
+  line-height: 1.35;
+
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.25);
+
+  padding: .7rem .85rem;
+
+  caret-color: #FFFFFF;
+
+  transition: 
+    background-color .15s ease,
+    border-color .15s ease,
+    box-shadow .15s ease;
+}
+
+/* Focus = SAISIE */
+.pos-wrap input:focus,
+.pos-wrap select:focus,
+.pos-wrap textarea:focus {
+  color: #FFFFFF !important;
+  background-color: #0E1628 !important;
+
+  border-color: var(--accent);
+  outline: none;
+
+  box-shadow:
+    0 0 0 2px rgba(225,29,72,.35),
+    inset 0 0 0 9999px rgba(14,22,40,.01); /* 🔥 FIX VISIBILITÉ TEXTE */
+}
+
+/* Placeholder */
+.pos-wrap input::placeholder,
+.pos-wrap textarea::placeholder {
+  color: rgba(255,255,255,.55);
+}
+
+/* Sélection texte */
+.pos-wrap input::selection,
+.pos-wrap textarea::selection {
+  background: rgba(225,29,72,.35);
+  color: #FFFFFF;
+}
+
+/* Champs number */
+.pos-wrap input[type="number"] {
+  color: #FFFFFF !important;
+}
+
+/* Select dropdown */
+.pos-wrap select option {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+/* Désactive autofill Chrome (BUG TEXTE TRANSPARENT) */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FFFFFF !important;
+  transition: background-color 9999s ease-in-out 0s;
+  box-shadow: 0 0 0px 1000px #0B1220 inset !important;
+}
+
+/* ======================================================
+   FIX INPUT VISIBILITÉ — PAGE COMMANDE / RÉPARATIONS
+   ====================================================== */
+
+.page-commande input,
+.page-commande select,
+.page-commande textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  color: #FFFFFF !important;
+  background-color: #0B1220 !important;
+
+  font-size: .95rem;
+  font-weight: 600;
+  line-height: 1.35;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.28);
+
+  padding: .65rem .8rem;
+
+  caret-color: #FFFFFF;
+
+  transition:
+    background-color .15s ease,
+    border-color .15s ease,
+    box-shadow .15s ease;
+}
+
+/* Focus = SAISIE VISIBLE */
+.page-commande input:focus,
+.page-commande select:focus,
+.page-commande textarea:focus {
+  color: #FFFFFF !important;
+  background-color: #0E1628 !important;
+
+  border-color: #e11d48;
+  outline: none;
+
+  box-shadow:
+    0 0 0 2px rgba(225,29,72,.35),
+    inset 0 0 0 9999px rgba(14,22,40,.01);
+}
+
+/* Placeholder */
+.page-commande input::placeholder,
+.page-commande textarea::placeholder {
+  color: rgba(255,255,255,.6);
+}
+
+/* Sélection texte */
+.page-commande input::selection,
+.page-commande textarea::selection {
+  background: rgba(225,29,72,.35);
+  color: #FFFFFF;
+}
+
+/* Number */
+.page-commande input[type="number"] {
+  color: #FFFFFF !important;
+  text-align: right;
+}
+
+/* Select options */
+.page-commande select option {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+/* Autofill Chrome */
+.page-commande input:-webkit-autofill,
+.page-commande input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FFFFFF !important;
+  transition: background-color 9999s ease-in-out 0s;
+  box-shadow: 0 0 0px 1000px #0B1220 inset !important;
+}
+
+
+/* Champ acompte – mise en avant */
+.page-commande .acompte-input {
+  min-width: 90px;
+  height: 46px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+
+

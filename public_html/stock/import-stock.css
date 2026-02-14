@@ -1,0 +1,194 @@
+/* =====================
+   GLOBAL STYLES
+===================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0f0f0f;
+    color: #f1f1f1;
+}
+
+/* =====================
+   HEADER
+===================== */
+
+.main-header {
+    background: #000;
+    border-bottom: 2px solid #c62828;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #d4af37;
+    font-weight: 700;
+}
+
+nav a {
+    color: #ccc;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+.logout {
+    color: #c62828;
+}
+
+/* =====================
+   LAYOUT
+===================== */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 1.5rem;
+}
+
+.card {
+    background: #151515;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* =====================
+   TITLES
+===================== */
+
+.section-title {
+    margin: 0 0 0.5rem;
+}
+
+.section-title.red {
+    color: #c62828;
+}
+
+.section-subtitle {
+    color: #aaa;
+    margin-bottom: 1.5rem;
+}
+
+/* =====================
+   FORMS
+===================== */
+
+.upload-form {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+input[type="file"],
+select {
+    background: #000;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 0.6rem;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.mapping-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+label {
+    font-size: 0.85rem;
+    color: #ccc;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+/* =====================
+   TABLE
+===================== */
+
+.table-wrapper {
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #000;
+}
+
+td {
+    border: 1px solid #333;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+
+.btn {
+    border: none;
+    padding: 0.8rem 1.4rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-gold {
+    background: #d4af37;
+    color: #000;
+}
+
+.btn-gold:hover {
+    background: #bfa133;
+}
+
+.btn-red {
+    background: #c62828;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.btn-red:hover {
+    background: #a61f1f;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+.main-footer {
+    text-align: center;
+    padding: 1rem;
+    color: #777;
+    border-top: 1px solid #222;
+    background: #000;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 600px) {
+    .upload-form {
+        flex-direction: column;
+    }
+}

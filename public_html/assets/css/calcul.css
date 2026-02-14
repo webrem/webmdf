@@ -1,0 +1,381 @@
+/* ======================================================
+   CALCUL PRIX — VERSION PRO / LISIBILITÉ MAX
+   Scope : body.page-calcul
+   ====================================================== */
+
+:root{
+  --calc-bg-main: #0f1220;
+  --calc-bg-panel: #161a2e;
+  --calc-bg-panel-soft: #1c2140;
+
+  --calc-border: rgba(255,255,255,.14);
+  --calc-border-strong: rgba(225,29,72,.45);
+
+  --calc-text: #f1f5f9;
+  --calc-muted: #b6bdd6;
+
+  --calc-accent: #e11d48;
+  --calc-accent-soft: rgba(225,29,72,.18);
+}
+
+/* ======================
+   PAGE / BACKGROUND
+   ====================== */
+
+.page-calcul{
+  background: linear-gradient(180deg, #0b0e1a, var(--calc-bg-main));
+  color: var(--calc-text);
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+/* =========================
+   FOND PAGE CALCUL – LISIBLE
+   ========================= */
+.page-calcul{
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5,8,20,.95),
+      rgba(8,12,28,.95)
+    ) !important;
+  color: #f8fafc;
+}
+/* =========================
+   CARTES / BLOCS PRINCIPAUX
+   ========================= */
+.page-calcul .glass{
+  background: rgba(15,20,40,.92) !important;
+  border: 1px solid rgba(225,29,72,.35);
+  box-shadow: 0 18px 40px rgba(0,0,0,.45);
+}
+
+/* =========================
+   TEXTE – CONTRASTE MAX
+   ========================= */
+.page-calcul h1,
+.page-calcul h2,
+.page-calcul h3,
+.page-calcul h4,
+.page-calcul h5,
+.page-calcul label,
+.page-calcul p,
+.page-calcul small{
+  color: #f8fafc !important;
+}
+
+.page-calcul .text-danger{
+  color: #fb7185 !important;
+}
+
+.page-calcul .text-muted{
+  color: rgba(248,250,252,.70) !important;
+}
+
+/* =========================
+   INPUTS / SELECTS – FINAL
+   ========================= */
+.page-calcul .form-control,
+.page-calcul .form-select{
+  background: rgba(10,15,30,.98) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255,255,255,.18);
+  font-weight: 500;
+}
+
+.page-calcul .form-control::placeholder{
+  color: rgba(255,255,255,.65) !important;
+}
+
+.page-calcul .form-control:focus,
+.page-calcul .form-select:focus{
+  background: rgba(10,15,30,1) !important;
+  border-color: #e11d48;
+  box-shadow: 0 0 0 .20rem rgba(225,29,72,.30);
+}
+
+/* Chrome fix */
+input, select, textarea{
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+
+
+/* ======================
+   HEADER
+   ====================== */
+
+.page-calcul .header-bar{
+  background: linear-gradient(90deg, var(--calc-accent), #b91c1c);
+  color: #fff;
+  border-radius: 0 0 18px 18px;
+  padding: 14px 22px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.45);
+}
+
+.page-calcul .header-bar span{
+  font-weight: 800;
+  letter-spacing: .3px;
+}
+
+/* ======================
+   TITRES
+   ====================== */
+
+.page-calcul h2{
+  color: var(--calc-accent);
+  letter-spacing: .6px;
+}
+
+.page-calcul h5{
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+
+/* ======================
+   PANELS (FORMULAIRE / PDF)
+   ====================== */
+
+.page-calcul .glass{
+  background: var(--calc-bg-panel);
+  border: 1px solid var(--calc-border);
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0,0,0,.45);
+}
+
+.page-calcul .glass:hover{
+  border-color: var(--calc-border-strong);
+}
+
+/* ======================
+   LABELS
+   ====================== */
+
+.page-calcul label{
+  color: var(--calc-muted);
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+/* ======================
+   INPUTS / SELECTS
+   ====================== */
+
+.page-calcul .form-control,
+.page-calcul .form-select{
+  background: var(--calc-bg-panel-soft);
+  color: var(--calc-text);
+  border: 1px solid var(--calc-border);
+  border-radius: 12px;
+  padding: .65rem .8rem;
+  font-weight: 500;
+}
+
+.page-calcul .form-control::placeholder{
+  color: rgba(241,245,249,.55);
+}
+
+.page-calcul .form-control:focus,
+.page-calcul .form-select:focus{
+  background: var(--calc-bg-panel-soft);
+  border-color: var(--calc-accent);
+  box-shadow: 0 0 0 .18rem rgba(225,29,72,.28);
+  color: var(--calc-text);
+}
+
+/* Select options */
+.page-calcul .form-select option{
+  background: #161a2e;
+  color: #fff;
+}
+
+/* ======================
+   ARTICLES (ligne multiple)
+   ====================== */
+
+.page-calcul .article-item{
+  background: rgba(255,255,255,.03);
+  border: 1px dashed var(--calc-border);
+  border-radius: 14px;
+}
+
+/* ======================
+   BOUTONS
+   ====================== */
+
+.page-calcul .btn-accent{
+  background: linear-gradient(90deg, var(--calc-accent), #fb7185);
+  border: none;
+  border-radius: 14px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.page-calcul .btn-accent:hover{
+  box-shadow: 0 0 22px rgba(225,29,72,.55);
+  transform: translateY(-1px);
+}
+
+.page-calcul .btn-outline-accent{
+  border: 2px solid var(--calc-accent);
+  color: var(--calc-accent);
+  background: transparent;
+  font-weight: 700;
+  border-radius: 14px;
+}
+
+.page-calcul .btn-outline-accent:hover{
+  background: var(--calc-accent);
+  color: #fff;
+}
+
+/* ======================
+   APERÇU PDF
+   ====================== */
+
+.page-calcul #ticketFrame{
+  width: 100%;
+  min-height: 560px;
+  background: #fff;
+  border-radius: 14px;
+  border: 2px solid var(--calc-accent);
+}
+
+/* ======================
+   ZONE ACTIONS PDF
+   ====================== */
+
+.page-calcul .preview-actions{
+  display: none;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+/* ======================
+   HINT INITIAL
+   ====================== */
+
+.page-calcul #emptyHint{
+  background: rgba(255,255,255,.04);
+  border: 1px dashed var(--calc-border);
+  border-radius: 14px;
+  padding: 20px;
+  color: var(--calc-muted);
+}
+
+/* ======================
+   AUTOCOMPLÉTION CLIENT
+   ====================== */
+
+.page-calcul #suggestions{
+  background: #161a2e;
+  border: 1px solid var(--calc-border);
+  border-radius: 12px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.page-calcul #suggestions .list-group-item{
+  background: transparent;
+  color: #fff;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.page-calcul #suggestions .list-group-item:hover{
+  background: var(--calc-accent-soft);
+}
+
+/* ======================
+   ANIMATION
+   ====================== */
+
+.page-calcul .fade-in{
+  animation: fadeInUp .25s ease both;
+}
+
+@keyframes fadeInUp{
+  from{ opacity:0; transform: translateY(6px); }
+  to{ opacity:1; transform: translateY(0); }
+}
+
+
+
+
+/* =========================
+   POS INPUT SYSTEM (FIX DEFINITIF)
+   ========================= */
+
+/* Reset Bootstrap / navigateur */
+.pos-wrap input,
+.pos-wrap select,
+.pos-wrap textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  color: #FFFFFF !important;
+  background-color: #0B1220 !important;
+
+  font-size: .95rem;
+  font-weight: 500;
+  line-height: 1.35;
+
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.25);
+
+  padding: .7rem .85rem;
+
+  caret-color: #FFFFFF;
+
+  transition: 
+    background-color .15s ease,
+    border-color .15s ease,
+    box-shadow .15s ease;
+}
+
+/* Focus = SAISIE */
+.pos-wrap input:focus,
+.pos-wrap select:focus,
+.pos-wrap textarea:focus {
+  color: #FFFFFF !important;
+  background-color: #0E1628 !important;
+
+  border-color: var(--accent);
+  outline: none;
+
+  box-shadow:
+    0 0 0 2px rgba(225,29,72,.35),
+    inset 0 0 0 9999px rgba(14,22,40,.01); /* 🔥 FIX VISIBILITÉ TEXTE */
+}
+
+/* Placeholder */
+.pos-wrap input::placeholder,
+.pos-wrap textarea::placeholder {
+  color: rgba(255,255,255,.55);
+}
+
+/* Sélection texte */
+.pos-wrap input::selection,
+.pos-wrap textarea::selection {
+  background: rgba(225,29,72,.35);
+  color: #FFFFFF;
+}
+
+/* Champs number */
+.pos-wrap input[type="number"] {
+  color: #FFFFFF !important;
+}
+
+/* Select dropdown */
+.pos-wrap select option {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+/* Désactive autofill Chrome (BUG TEXTE TRANSPARENT) */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FFFFFF !important;
+  transition: background-color 9999s ease-in-out 0s;
+  box-shadow: 0 0 0px 1000px #0B1220 inset !important;
+}

@@ -1,0 +1,3 @@
+[26-Sep-2025 23:44:07 UTC] PHP Fatal error:  DISEVAL - Use of eval is forbidden in phar:///usr/local/bin/composer2.phar/vendor/composer/semver/src/CompilingMatcher.php(87) : eval()'d code on line 1
+[26-Sep-2025 23:50:14 UTC] PHP Fatal error:  DISEVAL - Use of eval is forbidden in phar:///usr/local/bin/composer2.phar/vendor/composer/semver/src/CompilingMatcher.php(87) : eval()'d code on line 1
+[27-Sep-2025 00:11:32 UTC] PHP Fatal error:  DISEVAL - Use of eval is forbidden in phar:///usr/local/bin/composer2.phar/vendor/composer/semver/src/CompilingMatcher.php(87) : eval()'d code on line 1

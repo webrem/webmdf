@@ -1,0 +1,13 @@
+[2026-01-30 17:04:31] REF REÇUE | {"ref":""}
+[2026-01-30 17:06:21] REF REÇUE | {"ref":""}
+[2026-01-30 17:12:33] REF REÇUE | {"ref":""}
+[2026-01-30 17:12:53] REF REÇUE | {"ref":""}
+[2026-01-30 17:35:30] REF REÇUE | {"ref":"DEV-AC-REP-0E665F0D-217"}
+[2026-01-30 17:35:30] DELETE ventes_historique | {"rows":1}
+[2026-01-30 17:35:30] SUCCESS
+[2026-01-30 17:35:38] REF REÇUE | {"ref":"DEV-AC-REP-0E665F0D-218"}
+[2026-01-30 17:35:38] DELETE ventes_historique | {"rows":1}
+[2026-01-30 17:35:38] SUCCESS
+[2026-01-30 17:35:42] REF REÇUE | {"ref":"DEV-AC-REP-0E665F0D-217"}
+[2026-01-30 17:35:42] DELETE ventes_historique | {"rows":0}
+[2026-01-30 17:35:42] SUCCESS

@@ -1,0 +1,189 @@
+/* =====================================
+   STYLE COMMUN – STOCK & IMPORT CSV
+   Même design que "Gestion du stock"
+   Aucune logique impactée
+===================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    padding: 20px;
+    color: #222;
+}
+
+/* Conteneur principal */
+.container {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+/* Titres */
+h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+h5 {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 25px 0;
+}
+
+/* Champs formulaire */
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus {
+    border-color: #e30613;
+    box-shadow: 0 0 0 0.15rem rgba(227,6,19,.15);
+}
+
+/* Boutons */
+.btn {
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: #e30613;
+    border-color: #e30613;
+}
+
+.btn-primary:hover {
+    background: #c10510;
+    border-color: #c10510;
+}
+
+.btn-success {
+    background: #333;
+    border-color: #333;
+}
+
+.btn-success:hover {
+    background: #000;
+    border-color: #000;
+}
+
+/* Tableau aperçu CSV */
+.table {
+    background: #fff;
+    border-collapse: collapse;
+}
+
+.table td {
+    border: 1px solid #eee;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.table-dark {
+    background: #fff;
+}
+
+.table-dark td {
+    color: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+
+
+
+/* =========================
+   POS INPUT SYSTEM (FIX DEFINITIF)
+   ========================= */
+
+/* Reset Bootstrap / navigateur */
+.pos-wrap input,
+.pos-wrap select,
+.pos-wrap textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  color: #FFFFFF !important;
+  background-color: #0B1220 !important;
+
+  font-size: .95rem;
+  font-weight: 500;
+  line-height: 1.35;
+
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.25);
+
+  padding: .7rem .85rem;
+
+  caret-color: #FFFFFF;
+
+  transition: 
+    background-color .15s ease,
+    border-color .15s ease,
+    box-shadow .15s ease;
+}
+
+/* Focus = SAISIE */
+.pos-wrap input:focus,
+.pos-wrap select:focus,
+.pos-wrap textarea:focus {
+  color: #FFFFFF !important;
+  background-color: #0E1628 !important;
+
+  border-color: var(--accent);
+  outline: none;
+
+  box-shadow:
+    0 0 0 2px rgba(225,29,72,.35),
+    inset 0 0 0 9999px rgba(14,22,40,.01); /* 🔥 FIX VISIBILITÉ TEXTE */
+}
+
+/* Placeholder */
+.pos-wrap input::placeholder,
+.pos-wrap textarea::placeholder {
+  color: rgba(255,255,255,.55);
+}
+
+/* Sélection texte */
+.pos-wrap input::selection,
+.pos-wrap textarea::selection {
+  background: rgba(225,29,72,.35);
+  color: #FFFFFF;
+}
+
+/* Champs number */
+.pos-wrap input[type="number"] {
+  color: #FFFFFF !important;
+}
+
+/* Select dropdown */
+.pos-wrap select option {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+/* Désactive autofill Chrome (BUG TEXTE TRANSPARENT) */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FFFFFF !important;
+  transition: background-color 9999s ease-in-out 0s;
+  box-shadow: 0 0 0px 1000px #0B1220 inset !important;
+}

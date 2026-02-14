@@ -1,0 +1,365 @@
+/* ======================================================
+   PAGE RÉPARATIONS – R.E.Mobiles
+   Thème sombre | Lisibilité maximale | Select FIX
+   ====================================================== */
+
+/* =====================
+   VARIABLES & BASE
+   ===================== */
+
+:root{
+  --bg-main: #050814;
+  --bg-alt: #0a1026;
+  --bg-input: #0B1220;
+  --bg-input-focus: #0E1628;
+
+  --accent: #e11d48;
+  --accent-dark: #9f1239;
+
+  --text-main: #f8fafc;
+  --text-muted: rgba(255,255,255,.6);
+  --border-soft: rgba(255,255,255,.25);
+}
+
+.page-reparations{
+  background: linear-gradient(180deg, var(--bg-main), var(--bg-alt));
+  color: var(--text-main);
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* =====================
+   TITRES & BANNIÈRES
+   ===================== */
+
+.page-reparations h2{
+  color: #fb7185;
+  font-weight: 800;
+  letter-spacing: .4px;
+  margin-bottom: 1.5rem;
+}
+
+.page-reparations .role-banner{
+  background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+  border-radius: 14px;
+  padding: 12px;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: 0 12px 30px rgba(0,0,0,.45);
+  margin-bottom: 1.2rem;
+}
+
+/* =====================
+   TABLE RÉPARATIONS
+   ===================== */
+
+.page-reparations .table{
+  background: rgba(15,20,45,.95);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+.page-reparations .table thead th{
+  background: linear-gradient(90deg, var(--accent-dark), var(--accent));
+  color: #fff;
+  font-weight: 800;
+  font-size: .85rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  padding: 14px 12px;
+  border-right: 1px solid rgba(255,255,255,.18);
+}
+
+.page-reparations .table thead th:last-child{
+  border-right: none;
+}
+
+.page-reparations .table tbody tr{
+  background: rgba(255,255,255,.02);
+  transition: background .2s ease;
+}
+
+.page-reparations .table-hover tbody tr:hover{
+  background: rgba(225,29,72,.18);
+}
+
+.page-reparations .table tbody td{
+  padding: 14px 12px;
+  color: var(--text-main);
+  border-bottom: 1px solid rgba(255,255,255,.12);
+  border-right: 1px solid rgba(255,255,255,.08);
+  vertical-align: middle;
+}
+
+.page-reparations .table tbody td:last-child{
+  border-right: none;
+}
+
+/* =====================
+   FORMULAIRES – INPUT SYSTEM
+   ===================== */
+
+.pos-wrap input,
+.pos-wrap select,
+.pos-wrap textarea{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: var(--bg-input);
+  color: #fff;
+
+  font-size: .95rem;
+  font-weight: 500;
+  line-height: 1.35;
+
+  border-radius: 14px;
+  border: 1px solid var(--border-soft);
+
+  padding: .7rem .85rem;
+  caret-color: #fff;
+
+  transition: background-color .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+
+.pos-wrap input::placeholder,
+.pos-wrap textarea::placeholder{
+  color: var(--text-muted);
+}
+
+.pos-wrap input:focus,
+.pos-wrap select:focus,
+.pos-wrap textarea:focus{
+  background-color: var(--bg-input-focus);
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(225,29,72,.35);
+}
+
+/* =====================
+   SELECT – FIX DÉFINITIF
+   ===================== */
+
+.pos-wrap .form-select{
+  background-color: var(--bg-input);
+  color: #fff;
+}
+
+.pos-wrap .form-select option{
+  background-color: var(--bg-input);
+  color: #fff;
+}
+
+.pos-wrap .form-select option:hover,
+.pos-wrap .form-select option:checked{
+  background-color: var(--accent);
+  color: #fff;
+}
+
+/* =====================
+   AUTOFILL (CHROME FIX)
+   ===================== */
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus{
+  -webkit-text-fill-color: #fff !important;
+  box-shadow: 0 0 0px 1000px var(--bg-input) inset !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+/* =====================
+   BOUTONS
+   ===================== */
+
+.page-reparations .btn-success{
+  background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+  border: none;
+  font-weight: 800;
+}
+
+.page-reparations .btn-success:hover{
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+/* =====================
+   BADGES & LISTES
+   ===================== */
+
+.page-reparations .badge{
+  font-size: .85rem;
+  padding: .45em .7em;
+  border-radius: 8px;
+}
+
+.page-reparations ul{
+  padding-left: 0;
+  margin-bottom: .5rem;
+}
+
+.page-reparations li{
+  list-style: none;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+}
+
+/* =====================
+   MODAL
+   ===================== */
+
+.page-reparations .modal-content{
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.65);
+}
+
+
+.select2-container--classic .select2-selection--single {
+  background-color: #0B1220;
+  border: 1px solid rgba(255,255,255,.25);
+  color: #fff;
+  border-radius: 14px;
+  height: 42px;
+}
+
+.select2-selection__rendered {
+  color: #fff !important;
+  line-height: 42px !important;
+}
+
+.select2-dropdown {
+  background-color: #0B1220;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.25);
+}
+
+.select2-results__option--highlighted {
+  background-color: #e11d48 !important;
+  color: #fff !important;
+}
+
+
+/* ==================================================
+   DEVICES LIST – MODALS ACOMPTES (FIX LISIBILITÉ)
+   ================================================== */
+
+/* Fond + texte de la modal */
+.page-reparations .modal-content {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+}
+
+/* Header / Footer */
+.page-reparations .modal-header,
+.page-reparations .modal-footer {
+  border-color: #e5e7eb;
+}
+
+/* Titre */
+.page-reparations .modal-title {
+  color: #111111 !important;
+  font-weight: 600;
+}
+
+/* Corps */
+.page-reparations .modal-body {
+  color: #111111 !important;
+}
+
+/* Liste des acomptes */
+.page-reparations .modal-body .list-group-item {
+  background-color: #f8fafc !important;
+  color: #111111 !important;
+  border-color: #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+
+/* Texte secondaire */
+.page-reparations .modal-body small,
+.page-reparations .modal-body .text-muted {
+  color: #6b7280 !important;
+}
+
+/* Champs formulaire */
+.page-reparations .modal-content input,
+.page-reparations .modal-content select {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  border-color: #d1d5db;
+}
+
+/* Bouton fermer */
+.page-reparations .modal-header .btn-close {
+  filter: none;
+  opacity: 0.6;
+}
+
+/* Icône suppression */
+.page-reparations .modal-body a.text-danger {
+  font-size: 18px;
+}
+
+
+
+
+
+/* ==================================================
+   MODAL AJOUT ACOMPTE – OVERRIDE TOTAL DU THEME
+   ================================================== */
+
+/* Reset COMPLET des inputs dans la modal */
+.page-reparations #modalAcompte input,
+.page-reparations #modalAcompte select,
+.page-reparations #modalAcompte textarea,
+.page-reparations #modalAcompte .form-control,
+.page-reparations #modalAcompte .form-select {
+
+  appearance: auto !important;
+  -webkit-appearance: auto !important;
+
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  caret-color: #111111 !important;
+
+  -webkit-text-fill-color: #111111 !important;
+
+  border: 1px solid #d1d5db !important;
+}
+
+/* 🔥 CRITIQUE : neutraliser AUTOFILL DANS LA MODAL */
+.page-reparations #modalAcompte input:-webkit-autofill,
+.page-reparations #modalAcompte input:-webkit-autofill:focus,
+.page-reparations #modalAcompte input:-webkit-autofill:hover {
+
+  -webkit-text-fill-color: #111111 !important;
+  box-shadow: 0 0 0px 1000px #ffffff inset !important;
+  caret-color: #111111 !important;
+}
+
+/* Placeholder */
+.page-reparations #modalAcompte input::placeholder {
+  color: #9ca3af !important;
+  -webkit-text-fill-color: #9ca3af !important;
+}
+
+/* Focus */
+.page-reparations #modalAcompte input:focus,
+.page-reparations #modalAcompte select:focus {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  -webkit-text-fill-color: #111111 !important;
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25) !important;
+}
+
+/* Labels */
+.page-reparations #modalAcompte label {
+  color: #111111 !important;
+  font-weight: 600;
+}
+

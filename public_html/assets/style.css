@@ -1,0 +1,11 @@
+@import url("css/reparations.css");/* =========================
+   STYLE PRINCIPAL (LOADER)
+   ========================= */
+
+@import url("css/core.css");
+@import url("css/components.css");
+@import url("css/calcul.css");
+@import url("css/pos.css");
+@import url("css/admin.css");
+@import url("css/reparations.css");
+@import url("css/commande.css");

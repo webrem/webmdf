@@ -1,0 +1,70 @@
+[16-Dec-2025 23:15:30 America/Cayenne] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'date' in 'WHERE' in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php:74
+Stack trace:
+#0 /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php(74): mysqli->query()
+#1 {main}
+  thrown in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php on line 74
+[16-Dec-2025 23:16:38 America/Cayenne] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'article' in 'SELECT' in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php:138
+Stack trace:
+#0 /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php(138): mysqli->query()
+#1 {main}
+  thrown in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php on line 138
+[16-Dec-2025 23:16:59 America/Cayenne] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'article' in 'SELECT' in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php:138
+Stack trace:
+#0 /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php(138): mysqli->query()
+#1 {main}
+  thrown in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php on line 138
+[16-Dec-2025 23:17:00 America/Cayenne] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'article' in 'SELECT' in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php:138
+Stack trace:
+#0 /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php(138): mysqli->query()
+#1 {main}
+  thrown in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php on line 138
+[16-Dec-2025 23:17:01 America/Cayenne] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'article' in 'SELECT' in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php:138
+Stack trace:
+#0 /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php(138): mysqli->query()
+#1 {main}
+  thrown in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php on line 138
+[16-Dec-2025 23:17:02 America/Cayenne] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'article' in 'SELECT' in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php:138
+Stack trace:
+#0 /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php(138): mysqli->query()
+#1 {main}
+  thrown in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php on line 138
+[16-Dec-2025 23:17:02 America/Cayenne] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'article' in 'SELECT' in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php:138
+Stack trace:
+#0 /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php(138): mysqli->query()
+#1 {main}
+  thrown in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php on line 138
+[16-Dec-2025 23:17:02 America/Cayenne] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'article' in 'SELECT' in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php:138
+Stack trace:
+#0 /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php(138): mysqli->query()
+#1 {main}
+  thrown in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php on line 138
+[16-Dec-2025 23:17:02 America/Cayenne] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'article' in 'SELECT' in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php:138
+Stack trace:
+#0 /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php(138): mysqli->query()
+#1 {main}
+  thrown in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php on line 138
+[16-Dec-2025 23:17:03 America/Cayenne] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'article' in 'SELECT' in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php:138
+Stack trace:
+#0 /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php(138): mysqli->query()
+#1 {main}
+  thrown in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php on line 138
+[16-Dec-2025 23:17:03 America/Cayenne] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'article' in 'SELECT' in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php:138
+Stack trace:
+#0 /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php(138): mysqli->query()
+#1 {main}
+  thrown in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php on line 138
+[16-Dec-2025 23:17:03 America/Cayenne] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'article' in 'SELECT' in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php:138
+Stack trace:
+#0 /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php(138): mysqli->query()
+#1 {main}
+  thrown in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php on line 138
+[16-Dec-2025 23:17:03 America/Cayenne] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'article' in 'SELECT' in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php:138
+Stack trace:
+#0 /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php(138): mysqli->query()
+#1 {main}
+  thrown in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php on line 138
+[16-Dec-2025 23:17:03 America/Cayenne] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'article' in 'SELECT' in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php:138
+Stack trace:
+#0 /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php(138): mysqli->query()
+#1 {main}
+  thrown in /home/u498346438/domains/r-e-mobiles.com/public_html/admin/control_admin.php on line 138

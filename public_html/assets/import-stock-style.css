@@ -1,0 +1,179 @@
+/* ===============================
+   IMPORT STOCK – THEME PRO
+   Noir / Rouge / Or
+   (Aucune logique modifiée)
+================================ */
+
+/* Fond général */
+body {
+    background-color: #0f0f0f;
+    color: #eaeaea;
+}
+
+/* Conteneur principal */
+.container {
+    background: #141414;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+/* Titres */
+h2, h5 {
+    color: #d4af37; /* Or */
+    font-weight: 600;
+}
+
+hr {
+    border-color: #333;
+}
+
+/* Inputs */
+.form-control {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.form-control:focus {
+    background-color: #000;
+    color: #fff;
+    border-color: #c62828;
+    box-shadow: 0 0 0 0.15rem rgba(198,40,40,0.25);
+}
+
+/* Labels */
+label {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+/* Bouton principal (charger fichier) */
+.btn-primary {
+    background-color: #c62828;
+    border-color: #c62828;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #a61f1f;
+    border-color: #a61f1f;
+}
+
+/* Bouton continuer import */
+.btn-success {
+    background-color: #d4af37;
+    border-color: #d4af37;
+    color: #000;
+    font-weight: 700;
+}
+
+.btn-success:hover {
+    background-color: #bfa133;
+    border-color: #bfa133;
+    color: #000;
+}
+
+/* Tableau aperçu CSV */
+.table-dark {
+    background-color: #000;
+}
+
+.table-dark td {
+    border-color: #333;
+    color: #eaeaea;
+}
+
+/* Responsive léger */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+/* =========================
+   POS INPUT SYSTEM (FIX DEFINITIF)
+   ========================= */
+
+/* Reset Bootstrap / navigateur */
+.pos-wrap input,
+.pos-wrap select,
+.pos-wrap textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  color: #FFFFFF !important;
+  background-color: #0B1220 !important;
+
+  font-size: .95rem;
+  font-weight: 500;
+  line-height: 1.35;
+
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.25);
+
+  padding: .7rem .85rem;
+
+  caret-color: #FFFFFF;
+
+  transition: 
+    background-color .15s ease,
+    border-color .15s ease,
+    box-shadow .15s ease;
+}
+
+/* Focus = SAISIE */
+.pos-wrap input:focus,
+.pos-wrap select:focus,
+.pos-wrap textarea:focus {
+  color: #FFFFFF !important;
+  background-color: #0E1628 !important;
+
+  border-color: var(--accent);
+  outline: none;
+
+  box-shadow:
+    0 0 0 2px rgba(225,29,72,.35),
+    inset 0 0 0 9999px rgba(14,22,40,.01); /* 🔥 FIX VISIBILITÉ TEXTE */
+}
+
+/* Placeholder */
+.pos-wrap input::placeholder,
+.pos-wrap textarea::placeholder {
+  color: rgba(255,255,255,.55);
+}
+
+/* Sélection texte */
+.pos-wrap input::selection,
+.pos-wrap textarea::selection {
+  background: rgba(225,29,72,.35);
+  color: #FFFFFF;
+}
+
+/* Champs number */
+.pos-wrap input[type="number"] {
+  color: #FFFFFF !important;
+}
+
+/* Select dropdown */
+.pos-wrap select option {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+/* Désactive autofill Chrome (BUG TEXTE TRANSPARENT) */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FFFFFF !important;
+  transition: background-color 9999s ease-in-out 0s;
+  box-shadow: 0 0 0px 1000px #0B1220 inset !important;
+}

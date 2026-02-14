@@ -1,0 +1,313 @@
+/* =========================
+   POS — POINT DE VENTE UI
+   ========================= */
+
+/* Container principal */
+.pos-wrap{
+  padding:18px;
+  max-width:1400px;
+  margin:0 auto;
+}
+
+/* Topbar */
+.pos-topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:14px 16px;
+  border:1px solid var(--border);
+  background:linear-gradient(
+    180deg,
+    rgba(255,255,255,.06),
+    rgba(255,255,255,.03)
+  );
+  border-radius:18px;
+  box-shadow:0 18px 40px rgba(0,0,0,.35);
+  margin-bottom:16px;
+}
+
+.pos-brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.pos-logo{
+  width:44px;
+  height:44px;
+  border-radius:14px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(
+    135deg,
+    rgba(225,29,72,.25),
+    rgba(225,29,72,.08)
+  );
+  border:1px solid rgba(225,29,72,.35);
+}
+
+.pos-title{
+  display:flex;
+  flex-direction:column;
+  line-height:1.1;
+}
+.pos-title strong{
+  font-size:1.05rem;
+  letter-spacing:.3px;
+}
+.pos-title span{
+  font-size:.88rem;
+  color:var(--muted);
+}
+
+/* Chips infos */
+.pos-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.pos-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:7px 12px;
+  border-radius:999px;
+  background:rgba(255,255,255,.06);
+  border:1px solid var(--border);
+  font-size:.88rem;
+}
+
+.pos-chip-accent{
+  background:rgba(225,29,72,.15);
+  border-color:rgba(225,29,72,.45);
+}
+
+/* Panels */
+.pos-panel{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:20px;
+  box-shadow:0 18px 50px rgba(0,0,0,.45);
+  overflow:visible;
+}
+
+.pos-panel-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 16px 10px;
+  border-bottom:1px solid var(--border);
+}
+
+.pos-panel-title{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:700;
+}
+.pos-panel-title i{
+  color:var(--accent);
+}
+
+.pos-panel-body{
+  padding:16px;
+}
+
+/* Panel scan (autocomplete au-dessus) */
+.pos-scan{
+  position:relative;
+  z-index:50;
+}
+
+/* Champ scan */
+#produit_ref{
+  font-size:1.05rem;
+  padding:.9rem 1.05rem;
+  letter-spacing:.3px;
+}
+
+/* Table panier */
+.table{
+  --bs-table-bg: transparent;
+  --bs-table-color: rgba(255,255,255,.92);
+  --bs-table-striped-bg: rgba(255,255,255,.04);
+  --bs-table-hover-bg: rgba(225,29,72,.08);
+  border-color: rgba(255,255,255,.12);
+  margin-bottom:0;
+}
+
+.table thead th{
+  font-size:.78rem;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:rgba(255,255,255,.65);
+  background:rgba(255,255,255,.05);
+}
+
+.table td,
+.table th{
+  padding:.82rem .75rem;
+}
+
+.table td:nth-child(3){
+  text-align:left !important;
+}
+
+/* Totaux */
+.text-success{ color:#22C55E !important; }
+.text-warning{ color:#F59E0B !important; }
+.text-muted{ color:var(--muted) !important; }
+
+/* Autocomplete POS */
+.autocomplete-results{
+  position:absolute;
+  top:100%;
+  left:0;
+  right:0;
+  background:rgba(11,18,32,.98);
+  border:1px solid var(--border);
+  border-radius:14px;
+  z-index:99999;
+  max-height:320px;
+  overflow-y:auto;
+  box-shadow:0 22px 55px rgba(0,0,0,.55);
+}
+
+.autocomplete-item{
+  padding:12px 14px;
+  cursor:pointer;
+  color:#fff;
+}
+.autocomplete-item:hover{
+  background:rgba(225,29,72,.18);
+}
+
+/* Ticket iframe */
+iframe.ticket{
+  width:100%;
+  height:520px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.12);
+  background:#0B0F19;
+  box-shadow:0 18px 45px rgba(0,0,0,.45);
+}
+
+
+/* =========================
+   POS INPUT SYSTEM (FIX DEFINITIF)
+   ========================= */
+
+/* Reset Bootstrap / navigateur */
+.pos-wrap input,
+.pos-wrap select,
+.pos-wrap textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  color: #FFFFFF !important;
+  background-color: #0B1220 !important;
+
+  font-size: .95rem;
+  font-weight: 500;
+  line-height: 1.35;
+
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.25);
+
+  padding: .7rem .85rem;
+
+  caret-color: #FFFFFF;
+
+  transition: 
+    background-color .15s ease,
+    border-color .15s ease,
+    box-shadow .15s ease;
+}
+
+/* Focus = SAISIE */
+.pos-wrap input:focus,
+.pos-wrap select:focus,
+.pos-wrap textarea:focus {
+  color: #FFFFFF !important;
+  background-color: #0E1628 !important;
+
+  border-color: var(--accent);
+  outline: none;
+
+  box-shadow:
+    0 0 0 2px rgba(225,29,72,.35),
+    inset 0 0 0 9999px rgba(14,22,40,.01); /* 🔥 FIX VISIBILITÉ TEXTE */
+}
+
+/* Placeholder */
+.pos-wrap input::placeholder,
+.pos-wrap textarea::placeholder {
+  color: rgba(255,255,255,.55);
+}
+
+/* Sélection texte */
+.pos-wrap input::selection,
+.pos-wrap textarea::selection {
+  background: rgba(225,29,72,.35);
+  color: #FFFFFF;
+}
+
+/* Champs number */
+.pos-wrap input[type="number"] {
+  color: #FFFFFF !important;
+}
+
+/* Select dropdown */
+.pos-wrap select option {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+/* Désactive autofill Chrome (BUG TEXTE TRANSPARENT) */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FFFFFF !important;
+  transition: background-color 9999s ease-in-out 0s;
+  box-shadow: 0 0 0px 1000px #0B1220 inset !important;
+}
+
+
+/* =========================
+   FIX INPUT MODALE DARK (HORS .pos-wrap)
+   ========================= */
+
+.modal-content.bg-dark .form-control,
+.modal-content.bg-dark input,
+.modal-content.bg-dark textarea,
+.modal-content.bg-dark select {
+  background-color: #0B1220 !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255,255,255,.25) !important;
+
+  font-size: .95rem;
+  font-weight: 500;
+  caret-color: #FFFFFF;
+}
+
+/* Placeholder lisible */
+.modal-content.bg-dark .form-control::placeholder {
+  color: rgba(255,255,255,.55) !important;
+  opacity: 1;
+}
+
+/* Focus = écriture visible */
+.modal-content.bg-dark .form-control:focus {
+  background-color: #0E1628 !important;
+  color: #FFFFFF !important;
+
+  border-color: var(--accent) !important;
+  outline: none;
+
+  box-shadow:
+    0 0 0 2px rgba(225,29,72,.35),
+    inset 0 0 0 9999px rgba(14,22,40,.01);
+}
+

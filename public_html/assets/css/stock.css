@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap');
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:radial-gradient(circle at top,#1a1a1a,#000);
+    color:#f5f5f5;
+    padding:25px;
+}
+
+h1{
+    margin:0;
+    color:#d4af37;
+    letter-spacing:1px;
+}
+
+.subtitle{
+    color:#aaa;
+    margin-bottom:25px;
+}
+
+/* KPI */
+.kpi{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+    margin-bottom:30px;
+}
+.kpi-card{
+    background:linear-gradient(145deg,#0d0d0d,#1b1b1b);
+    padding:18px;
+    border-radius:14px;
+    border:1px solid #c9a44c;
+    box-shadow:0 12px 40px rgba(0,0,0,.7);
+    text-align:center;
+}
+.kpi-card span{
+    display:block;
+    font-size:26px;
+    font-weight:bold;
+    color:#fff;
+    margin-top:6px;
+}
+
+/* ACTIONS */
+.actions-bar{
+    display:flex;
+    gap:12px;
+    margin-bottom:18px;
+    flex-wrap:wrap;
+}
+.actions-bar a,
+.actions-bar button{
+    padding:12px 18px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(135deg,#c40000,#7a0000);
+    color:#fff;
+    text-decoration:none;
+    cursor:pointer;
+    font-weight:bold;
+    box-shadow:0 8px 25px rgba(196,0,0,.45);
+    transition:.2s;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+}
+.actions-bar a:hover,
+.actions-bar button:hover{
+    transform:translateY(-2px);
+}
+.actions-bar .secondary{
+    background:#111;
+    border:1px solid #444;
+    box-shadow:none;
+}
+
+/* TABLE */
+table{
+    width:100%;
+    background:linear-gradient(145deg,#0d0d0d,#1b1b1b);
+    border-collapse:collapse;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.8);
+}
+th,td{
+    padding:14px;
+    border-bottom:1px solid #222;
+    text-align:left;
+    vertical-align:middle;
+}
+th{
+    background:#111;
+    color:#d4af37;
+    text-transform:uppercase;
+    font-size:13px;
+    letter-spacing:.6px;
+}
+tr:hover{
+    background:#141414;
+}
+
+/* STATUT */
+.ok{
+    color:#2ecc71;
+    font-weight:bold;
+}
+.warn{
+    color:#f1c40f;
+    font-weight:bold;
+}
+.out{
+    color:#e74c3c;
+    font-weight:bold;
+}
+
+/* CHECKBOX */
+input[type="checkbox"]{
+    accent-color:#c40000;
+}
+
+/* ICON LINKS */
+td a{
+    color:#d4af37;
+    text-decoration:none;
+    margin-right:10px;
+    font-size:16px;
+}
+td a:hover{
+    color:#fff;
+}
+
+/* Actions cell spacing */
+.actions-cell{
+    white-space:nowrap;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+    .kpi{ grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width: 520px){
+    .kpi{ grid-template-columns:1fr; }
+}
+
+
+
+
+/* =========================
+   POS INPUT SYSTEM (FIX DEFINITIF)
+   ========================= */
+
+/* Reset Bootstrap / navigateur */
+.pos-wrap input,
+.pos-wrap select,
+.pos-wrap textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  color: #FFFFFF !important;
+  background-color: #0B1220 !important;
+
+  font-size: .95rem;
+  font-weight: 500;
+  line-height: 1.35;
+
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.25);
+
+  padding: .7rem .85rem;
+
+  caret-color: #FFFFFF;
+
+  transition: 
+    background-color .15s ease,
+    border-color .15s ease,
+    box-shadow .15s ease;
+}
+
+/* Focus = SAISIE */
+.pos-wrap input:focus,
+.pos-wrap select:focus,
+.pos-wrap textarea:focus {
+  color: #FFFFFF !important;
+  background-color: #0E1628 !important;
+
+  border-color: var(--accent);
+  outline: none;
+
+  box-shadow:
+    0 0 0 2px rgba(225,29,72,.35),
+    inset 0 0 0 9999px rgba(14,22,40,.01); /* 🔥 FIX VISIBILITÉ TEXTE */
+}
+
+/* Placeholder */
+.pos-wrap input::placeholder,
+.pos-wrap textarea::placeholder {
+  color: rgba(255,255,255,.55);
+}
+
+/* Sélection texte */
+.pos-wrap input::selection,
+.pos-wrap textarea::selection {
+  background: rgba(225,29,72,.35);
+  color: #FFFFFF;
+}
+
+/* Champs number */
+.pos-wrap input[type="number"] {
+  color: #FFFFFF !important;
+}
+
+/* Select dropdown */
+.pos-wrap select option {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+/* Désactive autofill Chrome (BUG TEXTE TRANSPARENT) */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FFFFFF !important;
+  transition: background-color 9999s ease-in-out 0s;
+  box-shadow: 0 0 0px 1000px #0B1220 inset !important;
+}
